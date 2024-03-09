@@ -8,6 +8,22 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-.icon-gradient {
+.gradient-bg {
   @apply bg-gradient-to-tr from-[#016DEA] to-[#FA0101]
+}
+
+.icon-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4F46E5, #E580B4, #E85D75); /* Your gradient definition */
+  mix-blend-mode: multiply;
+  mask: url(#shop-mask); /* Reference the mask */
+}
+
+.gradient-text {
+  @apply bg-gradient-to-tr from-[#016DEA] to-[#FA0101] text-transparent bg-clip-text
 }
