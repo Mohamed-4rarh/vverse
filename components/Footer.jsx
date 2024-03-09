@@ -47,13 +47,17 @@ export default function Footer() {
                         <div key={idx}>
                             <h3 className='text-white font-bold text-2xl mb-5'>{col.title}</h3>
                             {col.links?.map((link, idx) => (
-                                <a href='#' key={idx} className='text-[#ececec] flex items-center gap-1 hover:underline hover:text-white pl-5'> <ChevronRight color='#ececec' /> {link.text}</a>
+                                <a href='#' key={idx} className='text-[#ececec] flex items-center gap-1 hover:underline hover:text-white pl-5'> 
+                                    <ChevronRight color='#ececec' /> {link.text}
+                                </a>
                             ))}
                             {col.groups?.map((group, idx) => (
                                 <div key={idx}>
                                     <h3 className='text-white font-bold text-lg my-3 pl-2'>{group.groupTitle}</h3>
                                     {group.links.map((link, idx) => (
-                                        <a href='#' key={idx} className='text-[#ececec] flex items-center gap-1 hover:underline hover:text-white pl-5'> <ChevronRight color='#ececec' /> {link.text}</a>
+                                        <a href='#' key={idx} className='text-[#ececec] flex items-center gap-1 hover:underline hover:text-white pl-5'> 
+                                            <ChevronRight color='#ececec' /> {link.text}
+                                        </a>
                                     ))}
                                 </div>
                             ))}
