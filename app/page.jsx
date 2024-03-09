@@ -1,9 +1,9 @@
 import CustomRoundedButton from "@/components/CustomRoundedButton";
-import Endorsement from "@/components/Endorsement";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProfileCard from "@/components/ProfileCard";
-import { Megaphone, Network, QrCode, Save, Share2, ThumbsUp, User } from "lucide-react";
+import Endorsments from "@/containers/Endorsments";
+import { Megaphone, Network, QrCode, Save, Share2, ThumbsUp } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -45,13 +45,10 @@ export default function Home() {
             icon={<Save color="#fff" />}
           />
         </div>
-        <div className="p-6 max-w-[1450px] mx-auto border shadow-sm rounded-lg flex flex-col gap-5">
-          <Endorsement />
-          <Endorsement />
-          <Endorsement />
-          <Endorsement />
-          <Endorsement />
-        </div>
+      </section>
+
+      <section className="p-8">
+        <Endorsments />
       </section>
 
       {/* footer add image */}
